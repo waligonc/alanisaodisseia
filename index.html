@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a10">
+  <meta name="description" content="Um convite cinematográfico para Alanis assistir A Odisseia.">
+  <title>Alanis, temos uma sessão — A Odisseia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <section id="opening" class="opening" aria-label="Abertura cinematográfica">
+    <div class="curtain curtain--left" aria-hidden="true"></div>
+    <div class="curtain curtain--right" aria-hidden="true"></div>
+    <div class="spotlight" aria-hidden="true"></div>
+
+    <div class="opening__content">
+      <div class="studio-logo" aria-hidden="true">W</div>
+      <p class="kicker">Walisson Filmes apresenta</p>
+      <h1>Uma sessão<br><em>fora do roteiro</em></h1>
+      <p class="opening__subtitle">Estrelando Alanis, algumas tulipas<br>e um planejamento excessivamente específico.</p>
+      <button id="startButton" class="button button--gold" type="button">
+        <span aria-hidden="true">▶</span> Começar a sessão
+      </button>
+      <p class="sound-hint">O som entra em cena depois deste clique.</p>
+    </div>
+  </section>
+
+  <section id="countdown" class="countdown is-hidden" aria-live="polite">
+    <div class="countdown__circle"><span id="countdownNumber">3</span></div>
+    <p>O longa vai começar</p>
+  </section>
+
+  <main id="invitation" class="invitation is-hidden">
+    <header class="topbar">
+      <a class="brand" href="#convite" aria-label="Voltar ao convite">W<span>FILMES</span></a>
+      <p>SESSÃO ÚNICA · 16 JUL 2026</p>
+    </header>
+
+    <section id="convite" class="hero">
+      <div class="hero__copy reveal reveal--one">
+        <p class="kicker kicker--gold">Convocação cinematográfica nº 001</p>
+        <h2>Alanis,<br>temos uma<br><em>Odisseia.</em></h2>
+        <p class="hero__text">A missão é simples: assistir a um épico, evitar spoilers e chegar ao fim com energia suficiente para comentar tudo depois.</p>
+        <div class="friendship-stamp">AMIZADE · AVENTURA · PIPOCA</div>
+      </div>
+
+      <div class="ticket-stage reveal reveal--two">
+        <span class="tulip tulip--one" aria-hidden="true">🌷</span>
+        <span class="tulip tulip--two" aria-hidden="true">🌷</span>
+        <span class="tulip tulip--three" aria-hidden="true">🌷</span>
+
+        <article class="ticket" aria-label="Ingresso para A Odisseia">
+          <div class="ticket__main">
+            <div class="ticket__eyebrow">
+              <span>CONVITE OFICIAL</span>
+              <span>W·001</span>
+            </div>
+            <p class="ticket__for">ADMIT ONE · ALANIS OTACIANO</p>
+            <h3>A ODISSEIA</h3>
+            <div class="ticket__details">
+              <div><small>DATA</small><strong>16 JUL 2026</strong><span>QUINTA-FEIRA</span></div>
+              <div><small>HORÁRIO</small><strong>20H40</strong><span>SEM ATRASO ÉPICO</span></div>
+              <div><small>LOCAL</small><strong>UCI</strong><span>SHOPPING NEW YORK</span></div>
+            </div>
+            <div class="ticket__footer">
+              <div class="barcode" aria-hidden="true"></div>
+              <span>CLASSIFICAÇÃO: AMIZADE E AVENTURA</span>
+            </div>
+          </div>
+          <div class="ticket__stub">
+            <span>SESSÃO</span>
+            <strong>20:40</strong>
+            <span>FILEIRA: ÉPICA</span>
+            <div class="ticket__tulip" aria-hidden="true">🌷</div>
+          </div>
+        </article>
+
+        <p class="botanical-note">Participação especial do departamento de tulipas.</p>
+      </div>
+    </section>
+
+    <section class="details reveal reveal--three" aria-label="Detalhes da sessão">
+      <div><small>GÊNERO</small><strong>Épico + resenha pós-filme</strong></div>
+      <div><small>TRAJE</small><strong>Algo resistente à pipoca</strong></div>
+      <div><small>LOGÍSTICA</small><strong>Por conta do Walisson</strong></div>
+    </section>
+
+    <section class="decision reveal reveal--three">
+      <div class="decision__copy">
+        <p class="kicker kicker--gold">A cena decisiva</p>
+        <h3>Alanis, aceita essa missão?</h3>
+        <p>Não é prova de múltipla escolha, apesar das aparências.</p>
+      </div>
+
+      <div id="actions" class="actions" aria-live="polite">
+        <p id="directorNote" class="director-note" aria-atomic="true">Escolha com sabedoria. A produção está observando.</p>
+        <button id="yesButton" class="button button--yes" type="button">Sim, partiu <span>→</span></button>
+        <button id="noButton" class="button button--no" type="button">Não</button>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <span>WALISSON FILMES · 2026</span>
+      <span aria-hidden="true">🌷</span>
+      <span>NENHUM CICLOPE FOI FERIDO NESTE CONVITE</span>
+    </footer>
+  </main>
+
+  <section id="ending" class="ending is-hidden" aria-label="Créditos finais" aria-live="polite">
+    <button id="skipCredits" class="skip-credits" type="button">Pular para a cena pós-créditos</button>
+    <div id="petalRain" class="petal-rain" aria-hidden="true"></div>
+
+    <div id="creditsRoll" class="credits">
+      <p class="credits__small">WALISSON FILMES APRESENTA</p>
+      <p class="credits__small">UMA PRODUÇÃO DE QUINTA-FEIRA</p>
+
+      <div class="credits__gap"></div>
+
+      <p class="credits__label">CONVIDADA DE HONRA</p>
+      <h2>ALANIS<br>OTACIANO</h2>
+
+      <div class="credits__space"></div>
+
+      <p class="credits__label">INGRESSOS E LOGÍSTICA</p>
+      <h2>WALISSON</h2>
+
+      <div class="credits__space"></div>
+
+      <p class="credits__label">ESTRELANDO</p>
+      <h3>A ODISSEIA</h3>
+      <p class="credits__date">16.07.2026 · 20H40<br>UCI SHOPPING NEW YORK</p>
+
+      <div class="credits__space"></div>
+
+      <div class="credits__grid">
+        <p><small>ROTEIRO</small>Uma ideia muito específica</p>
+        <p><small>TRILHA SONORA</small>Ironic</p>
+        <p><small>ALÍVIO CÔMICO</small>O botão “Não”</p>
+        <p><small>PARTICIPAÇÃO ESPECIAL</small>Algumas tulipas</p>
+      </div>
+
+      <div class="credits__gap credits__gap--short"></div>
+
+      <p class="credits__small">E AGORA, A CENA PÓS-CRÉDITOS</p>
+      <div class="post-credit">
+        <span aria-hidden="true">🍿</span>
+        <h4>PROCURAR<br>COMIDA</h4>
+        <p>Porque nenhuma grande jornada termina de estômago vazio.</p>
+      </div>
+      <p class="the-end">FIM<span>?</span></p>
+    </div>
+  </section>
+
+  <div id="musicContainer" aria-hidden="true"></div>
+  <button id="musicButton" class="music-button is-hidden" type="button" aria-label="Pausar Ironic, de Alanis Morissette">
+    <span id="musicBars" class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span><small>AGORA TOCANDO</small><strong>Ironic · Alanis Morissette</strong></span>
+    <b id="musicState">ON</b>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
